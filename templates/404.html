@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body_class %}error-404{% endblock %}
+
+{% block content %}
+
+<div class="message-404">
+    <h4 class="display-4">Sorry, this page doesn't exist! {{ request.status }}</h4>
+    <p class="m-3">
+    <a href="/"><b>Return to homepage</b></a>.</p>
+</div>
+
+<div class="text-center">
+    <img src="https://news.psu.edu/sites/default/files/styles/threshold-768/public/YellowWarbler_Todd-Fellenbaum_crop_LR.jpg?itok=W4VaFNNA" alt="yellow warbler bird" class="rounded mx-auto d-block">
+</div>
+
+{% endblock %}
